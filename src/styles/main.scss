@@ -1,0 +1,125 @@
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-Thin.woff2"),
+       url("../shared/fonts/Inter-Thin.woff"),
+       url("../shared/fonts/Inter-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-ExtraLight.woff2"),
+       url("../shared/fonts/Inter-ExtraLight.woff"),
+       url("../shared/fonts/Inter-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-Light.woff2");
+       url("../shared/fonts/Inter-Light.woff"),
+       url("../shared/fonts/Inter-Light.ttf"),
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-Regular.woff2"),
+       url("../shared/fonts/Inter-Regular.woff"),
+       url("../shared/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-Medium.woff2"),
+       url("../shared/fonts/Inter-Medium.woff"),
+       url("../shared/fonts/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-SemiBold.woff2"),
+       url("../shared/fonts/Inter-SemiBold.woff"),
+       url("../shared/fonts/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-Bold.woff2"),
+       url("../shared/fonts/Inter-Bold.woff"),
+       url("../shared/fonts/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-ExtraBold.woff2"),
+       url("../shared/fonts/Inter-ExtraBold.woff"),
+       url("../shared/fonts/Inter-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../shared/fonts/Inter-Black.woff2"),
+       url("../shared/fonts/Inter-Black.woff"),
+       url("../shared/fonts/Inter-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  font-family: Inter Sans Text, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  min-height: 100vh;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background-color: #EEEEEE;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #EEEEEE;
+    border-radius: 44px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+  }
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
