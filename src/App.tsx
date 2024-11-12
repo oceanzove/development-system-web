@@ -2,7 +2,7 @@ import React from 'react';
 import Router from './app/router/Router';
 
 const App = () => (
-    <Router />
+	<Router />
 );
 
 export default App;

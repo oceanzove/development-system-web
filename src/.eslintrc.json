@@ -30,6 +30,9 @@
     "no-underscore-dangle": "off",
     "jsx-a11y/control-has-associated-label": "off",
     "react/react-in-jsx-scope": "off",
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single"],
     "@typescript-eslint/naming-convention": [
       "error",
       {
