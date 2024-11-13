@@ -1,11 +1,22 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr auto;
   gap: 20px;
   align-items: center;
   background: var(--material-list-item-bg-color);
   border-radius: var(--material-list-item-border-radius);
   padding: var(--material-list-item-padding);
+
+  width: 400px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .title {
@@ -13,15 +24,21 @@
   text-align: left;
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-eb);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .author {
   grid-column: 1;
   text-align: left;
   font-size: var(--font-size-s);
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.list {
+.competencies {
   grid-column: 1;
   display: flex;
   flex-direction: row;
@@ -30,12 +47,20 @@
   padding: 5px;
   border-radius: 12px;
 
-  .item {
+  overflow-x: auto;
+  white-space: nowrap;
+
+  scrollbar-width: none;
+
+  .competency {
     background: var(--material-list-item-bg-color);
     font-size: var(--font-size-s);
     border-radius: 8px;
     padding: 5px;
     text-align: center;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 

@@ -1,6 +1,8 @@
 .wrapper {
-  padding: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;   /* Это позволяет элементам переноситься на новую строку */
+  gap: 20px;         /* Промежуток между элементами */
+  justify-content: flex-start;
+  padding: 20px;
 }
+
