@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.competencies {
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  background: var(--material-list-holder-bg-color);
+  padding: 5px;
+  border-radius: 12px;
+
+  overflow-x: auto;
+  white-space: nowrap;
+
+  scrollbar-width: none;
+
+  .competency {
+    background: var(--material-list-item-bg-color);
+    font-size: var(--font-size-s);
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
