@@ -1,3 +1,4 @@
+import React from 'react';
 import css from './MaterialListItem.module.scss';
 
 interface MaterialListItemProps {

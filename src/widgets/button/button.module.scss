@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  font-size: var(--font-size-m);
+  background-color: var(--main-button-bg-color);
+  color: var(--white-font-color);
+  border-radius: var(--main-button-border-radius);
+  padding: var(--main-button-padding);
+}
