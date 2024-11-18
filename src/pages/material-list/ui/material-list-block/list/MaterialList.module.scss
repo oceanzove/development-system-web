@@ -1,8 +1,24 @@
 .wrapper {
+  //border: 2px solid red; /* Временная рамка */
+
+  //box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
-  padding: 20px;
+  //flex-direction: column;
+  padding: 0 41px;
+  //position: relative;
+  width: 100%;
+}
+.listContainer {
+  //border: 2px solid blue; /* Временная рамка */
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
+.listWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+}

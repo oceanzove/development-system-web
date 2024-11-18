@@ -12,7 +12,6 @@ const Router = () => (
 			{/* <Route path="/authororization" element={<AuthorizationPage />} /> */}
 			{/* <Route path="/registration" element={<RegistrationPage />} /> */}
 		</Routes>
-		{/* eslint-disable-next-line indent */}
 	</div>
 );
 export default Router;

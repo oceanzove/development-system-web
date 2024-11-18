@@ -5,19 +5,22 @@ interface MainButtonProps {
     text: string;
     width?: number;
     height?: number;
-    onClick?: React.MouseEventHandler<HTMLButtonElement>;
+	disabled?: boolean;
+	onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 export const MainButton = (props: MainButtonProps) => {
 	const {
-		text, width, height, onClick,
+		text, width, height, onClick, disabled,
 	} = props;
 	return (
 		<button
-			className={css.button}
+			className={`${css.main_button} ${disabled ? css.disabled : ''}`}
 			type="button"
 			onClick={onClick}
-			style={{ width, height }}
+			style={{
+				width, height,
+			}}
 		>
 			{text}
 		</button>

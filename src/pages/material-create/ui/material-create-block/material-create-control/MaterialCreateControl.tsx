@@ -1,6 +1,7 @@
 import React from 'react';
 import css from './MaterialCreateControl.module.scss';
 import { MainButton } from '../../../../../widgets/button/button';
+import { SecondaryButton } from '../../../../../widgets/cancel-button/secondary-button';
 
 export const MaterialCreateControl = () => {
 	const onSave = () => {
@@ -17,7 +18,7 @@ export const MaterialCreateControl = () => {
 				text="Сохранить"
 				onClick={onSave}
 			/>
-			<MainButton
+			<SecondaryButton
 				text="Закрыть"
 				onClick={onClose}
 			/>

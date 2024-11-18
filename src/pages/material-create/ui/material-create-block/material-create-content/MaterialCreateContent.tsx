@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useId } from 'react';
 import css from './MaterialCreateContent.module.scss';
-import { MaterialTypeDropdown } from '../../../../../widgets/material-type-dropdown/MaterialTypeDropdown';
+import { DropdownMenu } from '../../../../../widgets/dropdown-menu/dropdown-menu';
+import { Input } from '../../../../../widgets/input/input';
+import { Label } from '../../../../../widgets/input-label/label';
 
 export const MaterialCreateContent = () => {
 	const competencies = ['Программирование', 'Автоматизация', 'Тестирование'];
+
+	const materialTypes = [
+		{ value: 'chooseType', label: 'Выберите тип материала' },
+		{ value: 'article', label: 'Статья' },
+		{ value: 'video', label: 'Видео' },
+	];
+
+	const titleId = useId();
+	const typeId = useId();
 
 	return (
 		<div className={css.wrapper}>
@@ -16,8 +27,13 @@ export const MaterialCreateContent = () => {
 					</div>
 				)}
 			</div>
-			<div className={css.title}>
-				Название
+			<div>
+				<Label label="Название" id={titleId}>
+					<Input id={titleId} />
+				</Label>
+				<Label label="Тип материала" id={typeId}>
+					<DropdownMenu options={materialTypes} id={typeId} />
+				</Label>
 			</div>
 			<img
 				className={css.img}
@@ -27,9 +43,6 @@ export const MaterialCreateContent = () => {
 			<div className={css.description}>
 				<div className={css.block}> Описание</div>
 				<div className={css.block}> Содержание материала</div>
-				<div className={css.block}>
-					<MaterialTypeDropdown />
-				</div>
 			</div>
 		</div>
 	);

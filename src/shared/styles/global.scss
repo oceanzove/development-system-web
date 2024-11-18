@@ -1,7 +1,11 @@
 :root {
-  --default-bg-color: #EEF2F8;
+  --default-ph-bg-color: #EEF2F8;
+  --default-bg-color: #FFFFFF;
   --default-border: 1px solid #D8E1EF;
   --default-border-radius: 12px;
+
+  --disabled-button: #ccc;
+
 
   // * Fonts
   --font-size-l: 20px;
@@ -12,6 +16,7 @@
 
 
   --white-font-color: #FFFFFF;
+  --black-font-color: #000000;
 
   // * Block
   --block-min-width: 500px;
@@ -22,9 +27,37 @@
 
   // * Button
   --main-button-bg-color: #F91F71;
-  --main-button-bg-color-focus: #af1c53;
+  --main-button-bg-hover-color: #db3070;
   --main-button-border-radius: 8px;
   --main-button-padding: 10px 15px 10px 15px;
+
+  // * Secondary-button
+  --secondary-button-bg-color: #FFFFFF;
+  --secondary-button-bg-hover-color: #f3f0f0;
+  --secondary-button-border-radius: 8px;
+  --secondary-button-padding: 10px 15px 10px 15px;
+  --secondary-button-border: #C9D4E7 1px solid;
+
+
+  // * Input
+  --input-border-radius: 8px;
+  --input-padding: 10px 15px 10px 15px;
+  --input-gap: 10px;
+  --input-width: 100%;
+
+  // * Label
+  --label-color: #A0ABBE;
+  --label-padding: 0 0 0 2px;
+
+  // * Dropdown Menu
+  --dropdown-menu-border-radius: 8px;
+  --dropdown-menu-padding: 10px 15px 10px 15px;
+  --dropdown-menu-gap: 10px;
+  --dropdown-menu-width: 100%;
+
+  --question-type-padding: 6px;
+  --question-type-border-radius: 8px;
+
 
   // * Material Item
   --material-list-item-bg-color: #D9D9D9;

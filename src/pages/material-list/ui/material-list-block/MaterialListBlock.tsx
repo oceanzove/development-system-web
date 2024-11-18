@@ -6,6 +6,6 @@ import { MaterialListControl } from './control';
 export const MaterialListBlock = () => (
 	<div className={css.wrapper}>
 		<MaterialList />
-		<MaterialListControl />
+		{/* <MaterialListControl /> */}
 	</div>
 );

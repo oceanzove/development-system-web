@@ -1,4 +1,4 @@
-.main_button {
+.secondary_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,13 +6,14 @@
   cursor: pointer;
 
   font-size: var(--font-size-m);
-  background-color: var(--main-button-bg-color);
-  color: var(--white-font-color);
+  background-color: var(--secondary-button-bg-color);
+  color: var(--black-font-color);
+  border: var(--secondary-button-border);
   border-radius: var(--main-button-border-radius);
   padding: var(--main-button-padding);
 
   &:hover {
-    background-color: var(--main-button-bg-hover-color);
+    background-color: var(--secondary-button-bg-hover-color);
   }
 }
 

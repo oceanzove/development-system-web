@@ -2,5 +2,8 @@
   display: grid;
   grid-template-rows: 0.2ft auto;
 
+  background: var(--default-bg-color);
+  border-radius: var(--default-border-radius);
+
   padding: 20px;
 }
