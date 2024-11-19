@@ -1,1 +1,0 @@
-export { MaterialCreateContent } from './MaterialCreateContent';

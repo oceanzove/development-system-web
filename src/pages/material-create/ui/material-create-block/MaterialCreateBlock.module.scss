@@ -2,6 +2,8 @@
   display: grid;
   grid-template-rows: 0.2ft auto;
 
+  gap: 20px;
+
   background: var(--default-bg-color);
   border-radius: var(--default-border-radius);
 
