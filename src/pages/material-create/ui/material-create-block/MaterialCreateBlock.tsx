@@ -33,8 +33,8 @@ export const MaterialCreateBlock = () => {
 			<Label label="Содержание материала" id={descriptionId}>
 				<TextArea id={descriptionId} height={100} />
 			</Label>
-			<Label>
-				<Competencies competencies={competencies} />
+			<Label label="Компетенции">
+				<Competencies initialCompetencies={competencies} />
 			</Label>
 			<img
 				className={css.img}
