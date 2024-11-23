@@ -6,6 +6,7 @@ import SvgCollection from '../../../utils/SvgCollection';
 
 interface CompetencyProps {
     competency: string;
+	// TODO называние
 }
 
 export const Competency = (props: CompetencyProps) => {
@@ -18,6 +19,10 @@ export const Competency = (props: CompetencyProps) => {
 	const style = {
 		transform: CSS.Transform.toString(transform),
 		transition,
+	};
+
+	const onDeleteClick = () => {
+		console.log('123');
 	};
 
 	return (
@@ -37,6 +42,12 @@ export const Competency = (props: CompetencyProps) => {
 			>
 				{competency}
 			</div>
+			<button
+				className={css.delete}
+				onClick={onDeleteClick}
+				type="button"
+				dangerouslySetInnerHTML={{ __html: SvgCollection.DELETE_POINT }}
+			/>
 		</div>
 
 	);

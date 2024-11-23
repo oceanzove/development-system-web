@@ -20,3 +20,11 @@
   cursor: grabbing;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
+.delete {
+  cursor: pointer;
+}
+
+.delete:hover {
+  background: var(--competency-delete-bg-hover-color);
+}

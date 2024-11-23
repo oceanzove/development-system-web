@@ -45,6 +45,11 @@ export const Competencies = (props: CompetenciesProps) => {
 		}
 	};
 
+	const deleteCompetency = (event: DragEndEvent) => {
+		const { active, over } = event;
+		alert(active.id);
+	};
+
 	return (
 		<DndContext
 			sensors={sensors}
@@ -54,7 +59,11 @@ export const Competencies = (props: CompetenciesProps) => {
 			<SortableContext items={competencies} strategy={verticalListSortingStrategy}>
 				<div className={css.competencies}>
 					{competencies.map((competency) => (
-						<Competency key={competency} competency={competency} />
+						<Competency
+							key={competency}
+							competency={competency}
+							// TODO название и прокидывания
+						/>
 					))}
 				</div>
 			</SortableContext>
