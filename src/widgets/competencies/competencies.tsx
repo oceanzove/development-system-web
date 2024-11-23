@@ -62,7 +62,6 @@ export const Competencies = (props: CompetenciesProps) => {
 						<Competency
 							key={competency}
 							competency={competency}
-							// TODO название и прокидывания
 						/>
 					))}
 				</div>

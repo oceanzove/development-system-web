@@ -6,7 +6,6 @@ import SvgCollection from '../../../utils/SvgCollection';
 
 interface CompetencyProps {
     competency: string;
-	// TODO называние
 }
 
 export const Competency = (props: CompetencyProps) => {
