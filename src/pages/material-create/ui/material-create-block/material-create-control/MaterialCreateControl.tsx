@@ -1,15 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import css from './MaterialCreateControl.module.scss';
 import { MainButton } from '../../../../../widgets/button/button';
 import { SecondaryButton } from '../../../../../widgets/cancel-button/secondary-button';
 
 export const MaterialCreateControl = () => {
+	const navigate = useNavigate();
+
 	const onSave = () => {
 		alert('Сохранено');
 	};
 
 	const onClose = () => {
-		alert('Закрыто');
+		navigate('/');
 	};
 
 	return (

@@ -108,10 +108,8 @@ export const MaterialList = () => {
 
 	return (
 		<div className={css.wrapper}>
-			<div className={css.listContainer}>
-				<div className={css.listWrapper}>
-					{items}
-				</div>
+			<div className={css.list}>
+				{items}
 			</div>
 		</div>
 	);
